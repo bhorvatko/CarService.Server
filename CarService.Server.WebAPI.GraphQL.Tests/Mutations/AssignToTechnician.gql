@@ -1,0 +1,5 @@
+﻿mutation {
+  assignToTechnician (technicianId: {{technicianId}}, warrantId: {{warrantId}}) {
+    id
+  }
+}

@@ -1,0 +1,5 @@
+﻿mutation {
+  addWarrant (deadline: "2023-03-12 12:00", isUrgent: false, subject: "Subject", warrantTypeId: {{warrantTypeId}}) {
+    id
+  }
+}

@@ -1,0 +1,14 @@
+﻿query {
+	allTechnicians {
+		name,
+		warrants {
+			warrantType {
+				steps {
+					procedure {
+						name
+					}
+				}
+			}
+		}
+	}
+}

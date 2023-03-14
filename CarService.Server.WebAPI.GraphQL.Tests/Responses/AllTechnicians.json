@@ -1,0 +1,26 @@
+﻿{
+  "allTechnicians": [
+    {
+      "name": "Name",
+			"warrants": [
+				{
+					"warrantType": {
+						"steps": [
+							{
+								"procedure": {
+									"name": "First"
+								}
+							},
+							{
+								"procedure": {
+									"name": "Second"
+								}
+							}
+						]
+					}
+				}
+			]
+    }
+  ]
+} 
+

@@ -1,0 +1,9 @@
+﻿query {
+	warrant (id: {{warrantId}}) {
+		currentStep {
+			procedure {
+				name
+			}
+		}
+	}
+}

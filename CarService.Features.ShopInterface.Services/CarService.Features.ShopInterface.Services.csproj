@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CarService.Features.ShopInterface.Dto\CarService.Features.ShopInterface.Dto.csproj" />
+    <ProjectReference Include="..\CarService.Server.Core.Events\CarService.Server.Core.Events.csproj" />
+    <ProjectReference Include="..\CarService.Server.Core.Projections\CarService.Server.Core.Projections.csproj" />
+    <ProjectReference Include="..\CarService.Server.Domain.Model\CarService.Server.Domain.Model.csproj" />
+    <ProjectReference Include="..\CarService.Server.Domain.Repositories\CarService.Server.Domain.Repositories.csproj" />
+  </ItemGroup>
+
+</Project>

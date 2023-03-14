@@ -1,0 +1,5 @@
+﻿mutation {
+  addWarrantType (name: "Name", procedureIds: [{{firstProcedureId}}, {{secondProcedureId}}]) {
+    id
+  }
+}

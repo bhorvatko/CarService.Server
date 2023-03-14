@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "CarService.Server.Persistence.MsSql.Testing": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:54721;http://localhost:54724"
+    }
+  }
+}

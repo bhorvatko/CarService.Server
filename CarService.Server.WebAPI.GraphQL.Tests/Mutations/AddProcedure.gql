@@ -1,0 +1,6 @@
+﻿mutation {
+	addProcedure (name: "Name", color: "FFFFFF") {
+		name,
+		color
+	}
+}

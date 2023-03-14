@@ -1,0 +1,7 @@
+﻿mutation {
+	addProcedure (name: "{{name}}", color: "FFFFFF") {
+		name,
+		color,
+		id
+	}
+}
