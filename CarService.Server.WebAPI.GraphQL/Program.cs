@@ -13,7 +13,7 @@ namespace CarService.Server.WebAPI.GraphQL
 
             Core.Projections.RegistrationProvider.RegisterServices(services);
             Persistence.MsSql.RegistrationProvider.RegisterServices(services, configuration.GetConnectionString("MsSql")!);
-            Features.ShopInterface.Services.RegistrationProvider.RegisterServices(services, () => app!.Services);
+            Features.ShopInterface.Services.RegistrationProvider.RegisterServices(services,() => GetServiceProvider(app));
 
             services.AddGraphQLServer()
                 .AddQueryType<Query>()
@@ -30,6 +30,17 @@ namespace CarService.Server.WebAPI.GraphQL
             app.MapGraphQL();
 
             app.Run();
+        }
+
+        private static IServiceProvider GetServiceProvider(WebApplication? app)
+        {
+            if (app == null)
+            {
+                throw new InvalidOperationException("Cannot access the service provider before the application is built.");
+            } else
+            {
+                return app.Services;
+            }
         }
     }
 }
