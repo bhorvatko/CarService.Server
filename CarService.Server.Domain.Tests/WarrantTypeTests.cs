@@ -64,13 +64,13 @@ namespace CarService.Server.Domain.Tests
         }
 
         [Fact]
-        public void WarrantType_with_no_steps_is_invalid()
+        public void WarrantType_with_no_steps_is_valid()
         {
             IEnumerable<Procedure> procedures = new List<Procedure>();
 
             Action action = () => new WarrantType("test", procedures);
 
-            action.Should().Throw<Exception>();
+            action.Should().NotThrow<Exception>();
         }
 
         [Fact]
