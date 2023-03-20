@@ -27,11 +27,6 @@ namespace CarService.Server.Domain.Model
         [MemberNotNull(nameof(Steps))]
         public void Update(string name, IEnumerable<Procedure> procedures)
         {
-            if (!procedures.Any())
-            {
-                throw new ArgumentException("Warrant type must consist of at least 1 procedure.");
-            }
-
             Name = name;
             Steps = new List<Step>();   
 
